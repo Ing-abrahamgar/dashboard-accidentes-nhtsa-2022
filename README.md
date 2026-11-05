@@ -2,7 +2,7 @@
 
 > **42,514 muertes** en accidentes viales en un solo año. ¿Dónde, cuándo, cómo y a quién afectan más?
 
-![Dashboard NHTSA Final](imagenes/dashboard-final.png)
+![Dashboard NHTSA Final](panel-general.png)
 
 Proyecto de análisis y visualización de datos en **Power BI** con la base pública de la **NHTSA** (National Highway Traffic Safety Administration) sobre accidentes fatales ocurridos en 2022. Incluye modelado de datos, medidas en **DAX** y tres dashboards: uno narrativo, uno de números clave y uno de rutas y causas.
 
@@ -31,13 +31,13 @@ Identificar qué factores (ubicación, tipo de vía, momento del año, perfil de
 ## 🖼️ Vista del proyecto
 
 ### Dashboard NHTSA Final — la historia
-![Dashboard narrativo](imagenes/dashboard-final.png)
-
-### Reporte de Accidentes Viales 2022 — números importantes
-![Reporte general](imagenes/dashboard-general.png)
+![Dashboard narrativo](panel-general.png)
 
 ### Rutas y causas de los accidentes
-![Rutas y causas](imagenes/dashboard-rutas-causas.png)
+![Reporte general](dashboard-decesos_estado.png)
+
+### Reporte de Accidentes Viales 2022 — números importantes
+![Rutas y causas](accidentes_viales.png)
 
 ## 🗂️ Estructura del reporte
 
@@ -56,7 +56,7 @@ Modelo con tablas de hechos y dimensiones:
 - **Hechos:** `Accidentes USA 2022`, `Personas Accidentes 2022`
 - **Dimensiones y apoyo:** `FECHA`, `Poblacion de Estados`, `Auxiliar Accidentes USA 2022`
 
-![Modelo de datos](imagenes/modelo-datos.png)
+
 
 ## 🧮 Medidas DAX destacadas
 
