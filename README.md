@@ -1,67 +1,66 @@
-# 🚗 Accidentes Fatales en EE. UU. 2022 — Dashboard en Power BI
+# 🚗 ¡Manejar es peligroso! — Accidentes Viales Fatales en EE. UU. 2022
 
-> ¿**Dónde**, **cuándo**, **cómo** y **a quién** afectan más los accidentes de tránsito mortales en Estados Unidos?
+> **42,514 muertes** en accidentes viales en un solo año. ¿Dónde, cuándo, cómo y a quién afectan más?
 
-panel-general.png
+![Dashboard NHTSA Final](imagenes/dashboard-final.png)
 
-Proyecto de análisis y visualización de datos construido en **Power BI** con la base pública de la **NHTSA** (National Highway Traffic Safety Administration) sobre accidentes fatales ocurridos en 2022. Incluye modelado de datos, medidas en **DAX** y tres dashboards interactivos.
+Proyecto de análisis y visualización de datos en **Power BI** con la base pública de la **NHTSA** (National Highway Traffic Safety Administration) sobre accidentes fatales ocurridos en 2022. Incluye modelado de datos, medidas en **DAX** y tres dashboards: uno narrativo, uno de números clave y uno de rutas y causas.
 
 ---
 
 ## 🎯 Objetivo
 
-Identificar patrones en los accidentes fatales para entender qué factores (ubicación, tipo de vía, clima, perfil de las víctimas y causa) concentran más muertes, y presentar los hallazgos de forma clara para la toma de decisiones.
-
-## ❓ Preguntas que responde
-
-- ¿Qué estados concentran más muertes, en cifras absolutas y **por cada 100,000 habitantes**?
-- ¿Cómo evolucionan las muertes **mes a mes** y en acumulado durante el año?
-- ¿Ocurren más en zonas **rurales o urbanas**? ¿En qué tipo de vía?
-- ¿Cuáles son las **principales causas** del accidente?
-- ¿Qué papel juegan el **clima**, las **motocicletas**, los **adultos mayores (65+)** y el **sexo** de las víctimas?
-- ¿Cuánto tarda en promedio la **reacción de emergencia** por estado?
+Identificar qué factores (ubicación, tipo de vía, momento del año, perfil de las víctimas y causa del accidente) concentran más muertes viales en Estados Unidos, y presentar los hallazgos de forma clara para la toma de decisiones.
 
 ## 🔎 Hallazgos principales
 
-> ✏️ *Reemplaza con tus cifras reales de cada dashboard.*
+| # | Hallazgo | Dato |
+|---|---|---|
+| 1 | **Escala del problema** | 42,514 muertes en 39,221 accidentes (≈ 1.08 muertes por accidente) |
+| 2 | **Estados con más muertes (cifras absolutas)** | California y Texas (4.4 mil cada uno) y Florida (3.5 mil) |
+| 3 | **Estados más peligrosos por habitante** | Mississippi (23.74), Wyoming (23.23) y New Mexico (22.01) por cada 100,000 habitantes; el promedio nacional es **12.70** |
+| 4 | **Peligro desproporcionado en estados desérticos y del "viejo sur"** | Mississippi, South Carolina, Arkansas, Alabama y Louisiana están entre los 8 primeros en tasa por habitante |
+| 5 | **Las carreteras principales concentran las muertes** | Highway estatal: 29 % · US Highway: 16 % · Interestatal: 13 % (el mapa de calor muestra más concentración en el sur) |
+| 6 | **Zona urbana vs. rural** | 59.15 % urbano (25 mil) · 40.85 % rural (17 mil) |
+| 7 | **Principales causas** | Choque con vehículo en movimiento (41.49 %), peatones (16.51 %) y volcaduras (6.82 %) |
+| 8 | **Perfil de las víctimas** | 30.67 mil hombres frente a 11.74 mil mujeres (las mujeres son ≈ 28 % de las víctimas con sexo registrado) |
+| 9 | **Estacionalidad** | **Octubre** es el mes más letal; curiosamente el invierno no genera más muertes |
 
-1. **Las carreteras principales (highways), sobre todo en el sur del país, concentran la mayor cantidad de muertes.**
-2. **[Estado X]** tiene el mayor número de decesos, pero **[Estado Y]** lidera en muertes por 100,000 habitantes.
-3. **[X %]** de las muertes ocurre en zonas **[rurales/urbanas]**.
-4. La causa más frecuente es **[causa]**, con **[N]** decesos.
-5. Los meses con más muertes son **[meses]**; **[mes]** tuvo un cambio de **[±X %]** frente al mes anterior.
-6. Las **motocicletas** representan **[X %]** de las muertes y los **adultos de 65+** **[X %]**.
+> 💡 **Contraste clave:** California y Texas lideran en número de muertes por su población, pero **no aparecen entre los estados más peligrosos por habitante**. Medir por cada 100,000 habitantes cambia por completo la conclusión.
 
 ## 🖼️ Vista del proyecto
 
-| Panorama general | Rutas, zona y causas |
-|---|---|
-| ![Panorama](panel-general.png) | ![Rutas y causas](dashboard-decesos_estado.png) 
+### Dashboard NHTSA Final — la historia
+![Dashboard narrativo](imagenes/dashboard-final.png)
 
+### Reporte de Accidentes Viales 2022 — números importantes
+![Reporte general](imagenes/dashboard-general.png)
 
+### Rutas y causas de los accidentes
+![Rutas y causas](imagenes/dashboard-rutas-causas.png)
 
 ## 🗂️ Estructura del reporte
 
 | Página | Contenido |
 |---|---|
-| **Análisis exploratorio** | Exploración inicial: estados, fechas, clima, tipo de calle y autobuses escolares |
-| **Dashboard general** | KPIs de decesos, tendencia en el tiempo y comparativo por estado |
-| **Dashboard rutas y causas** | Zona rural/urbana, rutas con más muertes y causas del accidente |
-| **Dashboard perfil de víctimas** | Sexo, motocicletas, adultos mayores y muertes por 100,000 habitantes |
-| **Indicadores mensuales** | Acumulado anual, cambio mes vs. mes y tiempo de reacción promedio |
+| **Dashboard NHTSA Final** | Mensaje principal: total de muertes, distribución por sexo, mapa de calor, mes más letal y ranking de estados por muertes por 100,000 habitantes |
+| **Reporte de Accidentes Viales 2022** | KPIs (muertes totales, total de accidentes y promedio por accidente), decesos a lo largo del tiempo y top de estados |
+| **Rutas y causas** | Muertes en zona rural vs. urbana, por tipo de calle y por causa del accidente |
+| **Análisis exploratorio** | Exploración inicial por estado, fecha, clima, tipo de calle y autobuses escolares |
+| **Páginas de apoyo** | Tablas de apoyo con motocicletas, adultos de 65+, tiempo de reacción promedio, acumulado del año y cambio mes vs. mes |
 
 ## 🧱 Modelo de datos
 
-Modelo en estrella con:
+Modelo con tablas de hechos y dimensiones:
 
 - **Hechos:** `Accidentes USA 2022`, `Personas Accidentes 2022`
-- **Dimensiones:** `FECHA`, `Poblacion de Estados`, `Auxiliar Accidentes USA 2022`
+- **Dimensiones y apoyo:** `FECHA`, `Poblacion de Estados`, `Auxiliar Accidentes USA 2022`
 
 ![Modelo de datos](imagenes/modelo-datos.png)
 
 ## 🧮 Medidas DAX destacadas
 
-> ✏️ *Pega aquí tu código real. Estos son ejemplos del estilo; ajústalos a tus nombres de columnas.*
+> ✏️ *Reemplaza estos ejemplos con tu código real.*
 
 ```DAX
 Decesos Totales = SUM ( 'Accidentes USA 2022'[Decesos] )
@@ -80,11 +79,11 @@ RETURN DIVIDE ( MesActual - MesPasado, MesPasado )
 
 ## 🛠️ Herramientas y habilidades
 
-- **Power BI Desktop** — visualización y dashboards
-- **Power Query** — limpieza y transformación
-- **DAX** — medidas, inteligencia de tiempo, métricas per cápita
-- **Modelado dimensional** — esquema en estrella, tabla de calendario
-- **Storytelling con datos** — mensajes clave en cada dashboard
+- **Power BI Desktop** — dashboards y visualización
+- **Power Query** — limpieza y transformación de datos
+- **DAX** — medidas, inteligencia de tiempo y métricas per cápita
+- **Modelado de datos** — tablas de hechos, calendario y dimensiones
+- **Storytelling con datos** — títulos y mensajes que explican cada gráfico
 
 ## 📁 Contenido del repositorio
 
@@ -97,8 +96,8 @@ RETURN DIVIDE ( MesActual - MesPasado, MesPasado )
 ## ▶️ Cómo abrirlo
 
 1. Descarga `nhtsa_accidentes_2022.pbix`.
-2. Ábrelo con [Power BI Desktop](https://powerbi.microsoft.com/desktop/) 
-3. Explora las páginas y usa los filtros y segmentaciones.
+2. Ábrelo con [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (gratuito, solo Windows).
+3. Explora las páginas y usa los filtros.
 
 ## 📚 Fuente de datos
 
@@ -107,6 +106,6 @@ RETURN DIVIDE ( MesActual - MesPasado, MesPasado )
 
 ## 👤 Autor
 
-**[Tu nombre]** — [LinkedIn](https://www.linkedin.com/in/tu-usuario) · [Correo](mailto:tu-correo@ejemplo.com)
+**[Abraham Garcia]** — [LinkedIn](www.linkedin.com/in/abrahamgarcia-ing) · 
 
 ⭐ Si te resultó útil, deja una estrella al repositorio.
