@@ -2,7 +2,7 @@
 
 > ¿**Dónde**, **cuándo**, **cómo** y **a quién** afectan más los accidentes de tránsito mortales en Estados Unidos?
 
-![Dashboard principal]( panel-general.png)
+panel-general.png
 
 Proyecto de análisis y visualización de datos construido en **Power BI** con la base pública de la **NHTSA** (National Highway Traffic Safety Administration) sobre accidentes fatales ocurridos en 2022. Incluye modelado de datos, medidas en **DAX** y tres dashboards interactivos.
 
