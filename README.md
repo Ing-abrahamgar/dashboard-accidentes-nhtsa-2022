@@ -2,7 +2,7 @@
 
 > ¿**Dónde**, **cuándo**, **cómo** y **a quién** afectan más los accidentes de tránsito mortales en Estados Unidos?
 
-![Dashboard principal](imagenes/dashboard-principal.png)
+![Dashboard principal](panel-general.png)
 
 Proyecto de análisis y visualización de datos construido en **Power BI** con la base pública de la **NHTSA** (National Highway Traffic Safety Administration) sobre accidentes fatales ocurridos en 2022. Incluye modelado de datos, medidas en **DAX** y tres dashboards interactivos.
 
@@ -36,7 +36,7 @@ Identificar patrones en los accidentes fatales para entender qué factores (ubic
 
 | Panorama general | Rutas, zona y causas |
 |---|---|
-| ![Panorama](imagenes/dashboard-general.png) | ![Rutas y causas](imagenes/dashboard-decesos_estado) |
+| ![Panorama](panel-general.png) | ![Rutas y causas](dashboard-decesos_estado.png) 
 
 
 
